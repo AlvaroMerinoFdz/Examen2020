@@ -7,8 +7,8 @@ class Persona:
 
     def get_identificador(self):
         return self._identificador
+
     def __str__(self):
         clase = type(self).__name__
         mensaje = "Identificador: {1}"
-        return mensaje.format(clase,self.get_identificador())
-
+        return mensaje.format(clase, self.get_identificador())
