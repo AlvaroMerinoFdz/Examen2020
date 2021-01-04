@@ -52,5 +52,6 @@ class Libro:
 
     def __str__(self):
         clase = type(self).__name__
-        mensaje = "{0}= Identificador: {1}"
-        return mensaje.format(clase, self.get_identificador())
+        mensaje = "{0}= Identificador: {1}, ISBN:{2}, Tíitulo:{3}, Editorial: {4}, Idioma: {5}, Autor: {6}, Género: {7}"
+        return mensaje.format(clase, self.get_identificador(), self.get_isbn(), self.get_titulo(),
+                              self.get_editorial(), self.get_idioma(), self.get_autor(), self.get_genero())
